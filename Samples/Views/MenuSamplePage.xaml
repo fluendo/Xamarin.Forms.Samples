@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Samples.Views.MenuSamplePage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Blue" Padding="0,0,0,15">
+            <BoxView Color="Lime"/>
+              <StackLayout HeightRequest="200">
+                 <AbsoluteLayout BackgroundColor="Lime">
+                                <!-- Color="Fuchsia" -->
+                                <!--  Color="{Binding SelectedColor, Converter={StaticResource Converter.VASColorToFormsColorConverter}}"  -->
+                                <Label
+                                    Text="Hola amigos!"
+                                    BackgroundColor="Green"
+                                    AbsoluteLayout.LayoutBounds=".1,0,1,1"
+                                    AbsoluteLayout.LayoutFlags="All"
+                                    />
+                                <BoxView WidthRequest="10" 
+                                         BackgroundColor="Blue"
+
+                                     Color="Fuchsia" 
+                                     IsVisible="true"/>
+                                <!-- SkCanvas is not passing touch events until it is fix use the label area as hit area as a hack -->
+                                <Label 
+                                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                    AbsoluteLayout.LayoutFlags="All"/>
+                            </AbsoluteLayout>
+            </StackLayout>
+            <ListView x:Name="menus"
+                VerticalOptions="FillAndExpand"
+                RowHeight="40"
+                SeparatorVisibility="None"
+                BackgroundColor="Aqua"
+                ItemsSource="{Binding Menu.ViewModels}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <AbsoluteLayout BackgroundColor="Lime">
+                                <Button
+                                    BackgroundColor="Green"
+                                    AbsoluteLayout.LayoutBounds=".1,0,1,1"
+                                    AbsoluteLayout.LayoutFlags="All"
+                                    Text = "{Binding Text}"/>
+                                <BoxView WidthRequest="3" 
+                                     Color="Fuchsia"
+                                     IsVisible="{Binding Selected}"/>   
+                                <Label 
+                                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                    AbsoluteLayout.LayoutFlags="All"/>
+                            </AbsoluteLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <BoxView BackgroundColor="Transparent" VerticalOptions="Fill"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

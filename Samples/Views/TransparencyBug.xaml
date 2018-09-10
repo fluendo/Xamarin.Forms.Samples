@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Samples.Views.TransparencyBug">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Blue" Spacing="10" Padding="10,10,10,10">
+            <BoxView HeightRequest="50" BackgroundColor="Transparent"/>
+            <BoxView HeightRequest="50" BackgroundColor="Aqua"/>
+            <Label HeightRequest="50" Text="This is a label" BackgroundColor="Transparent"/>
+            <Label HeightRequest="50" Text="This is a label" BackgroundColor="Aqua"/>
+            <Button Margin="5,5,5,5" HeightRequest="50" Text="This is a button" BackgroundColor="Transparent"/>
+              <Button Margin="5,5,5,5" HeightRequest="50" Text="This is a button" BackgroundColor="Aqua"/>
+            <ListView HeightRequest="50" BackgroundColor="Transparent"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

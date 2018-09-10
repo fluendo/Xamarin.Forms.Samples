@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FFA94507-7555-4B6B-9F81-F6BD14602983}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <RootNamespace>Samples.Gtk</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Xamarin.Forms.Fluendo\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj">
+      <Project>{0EC4514F-0A79-4B72-B783-3FD0084C3D37}</Project>
+      <Name>Xamarin.Forms.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xamarin.Forms.Fluendo\Xamarin.Forms.Platform.GTK\Xamarin.Forms.Platform.GTK.csproj">
+      <Project>{0D497738-2598-431D-8CAF-8FBF3D9F99EC}</Project>
+      <Name>Xamarin.Forms.Platform.GTK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xamarin.Forms.Fluendo\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj">
+      <Project>{95ACE752-21C8-42B9-B97F-9DB876B89197}</Project>
+      <Name>Xamarin.Forms.Xaml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\Samples\Samples.projitems" Label="Shared" Condition="Exists('..\Samples\Samples.projitems')" />
+  <Import Project="../packages/Xamarin.Forms.3.1.0.697729/build/netstandard2.0/Xamarin.Forms.targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
