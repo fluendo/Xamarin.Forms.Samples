@@ -9,15 +9,15 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Samples", "Samples\Samples.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.Gtk", "Samples.Gtk\Samples.Gtk.csproj", "{FFA94507-7555-4B6B-9F81-F6BD14602983}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xamarin.Flex", "..\Xamarin.Forms.Fluendo\Xamarin.Flex\Xamarin.Flex.shproj", "{A6703C7D-D362-452A-A7A5-73771194D38C}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Xamarin.Flex", "Xamarin.Forms\Xamarin.Flex\Xamarin.Flex.shproj", "{A6703C7D-D362-452A-A7A5-73771194D38C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Core", "..\Xamarin.Forms.Fluendo\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj", "{0EC4514F-0A79-4B72-B783-3FD0084C3D37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Core", "Xamarin.Forms\Xamarin.Forms.Core\Xamarin.Forms.Core.csproj", "{0EC4514F-0A79-4B72-B783-3FD0084C3D37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Platform", "..\Xamarin.Forms.Fluendo\Xamarin.Forms.Platform\Xamarin.Forms.Platform.csproj", "{C8232584-22E2-4C71-861F-C4110B40B8A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Platform", "Xamarin.Forms\Xamarin.Forms.Platform\Xamarin.Forms.Platform.csproj", "{C8232584-22E2-4C71-861F-C4110B40B8A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Platform.GTK", "..\Xamarin.Forms.Fluendo\Xamarin.Forms.Platform.GTK\Xamarin.Forms.Platform.GTK.csproj", "{0D497738-2598-431D-8CAF-8FBF3D9F99EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Platform.GTK", "Xamarin.Forms\Xamarin.Forms.Platform.GTK\Xamarin.Forms.Platform.GTK.csproj", "{0D497738-2598-431D-8CAF-8FBF3D9F99EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Xaml", "..\Xamarin.Forms.Fluendo\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj", "{95ACE752-21C8-42B9-B97F-9DB876B89197}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Xaml", "Xamarin.Forms\Xamarin.Forms.Xaml\Xamarin.Forms.Xaml.csproj", "{95ACE752-21C8-42B9-B97F-9DB876B89197}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
