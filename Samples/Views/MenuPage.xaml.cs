@@ -24,7 +24,8 @@ namespace Samples.Views
                 new HomeMenuItem {PageType =typeof (AcitivityIndicatorPage), Title="Activity indicator" },
                 new HomeMenuItem {PageType =typeof (PageWithBackgroundImage), Title="Page with image" },
                 new HomeMenuItem {PageType =typeof (MenuSamplePage), Title="Menu Page" },
-                  new HomeMenuItem {PageType =typeof (LabelsBugPage), Title="Labels Bug" },
+                new HomeMenuItem {PageType =typeof (LabelsBugPage), Title="Labels Bug" },
+                new HomeMenuItem {PageType =typeof (SliderPage), Title="Slider Page" },
             };
 
             ListViewMenu.ItemsSource = menuItems;
